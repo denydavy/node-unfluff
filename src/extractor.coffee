@@ -81,7 +81,7 @@ module.exports =
   # Hard-truncates titles containing colon or spaced dash
   title: (doc) ->
     titleText = rawTitle(doc)
-    return cleanTitle(titleText, ["|", " - ", "»", ":"])
+    return titleText
 
   # Grab the title with soft truncation
   softTitle: (doc) ->
