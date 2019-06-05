@@ -545,6 +545,7 @@ cleanTitle = (title, delimiters) ->
 
 rawTitle = (doc) ->
   gotTitle = false
+  console.log(doc)
   titleText = ""
   # The first h1 or h2 is a useful fallback
   _.each [doc("meta[property='og:title']")?.first()?.attr("content"), \
